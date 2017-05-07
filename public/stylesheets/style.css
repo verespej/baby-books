@@ -13,7 +13,6 @@ a {
 }
 
 section {
-	border: 3px solid black;
 	margin: 10px;
 	display: none;
 }
@@ -41,6 +40,7 @@ section {
 
 #story .image {
 	height: 300px;
+	text-align: center;
 }
 
 #story aside {
@@ -50,6 +50,8 @@ section {
 #story .text {
 	height: 100px;
 	flex: 1;
+	font-size: 36px;
+	text-align: center;
 }
 
 #story button {
@@ -61,11 +63,6 @@ section {
 	height: 400px;
 }
 
-#feedback div {
-	display: flex;
-}
-
-#feedback button {
+#feedback #feedback-option {
 	flex: 1;
-	height: 40px;
 }

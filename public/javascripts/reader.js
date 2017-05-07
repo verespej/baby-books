@@ -65,7 +65,7 @@ $(() => {
 	$('#story0').click(() => selectBook(stories[0]));
 	$('#story1').click(() => selectBook(stories[1]));
 
-	$('#nextPage').click(() => {
+	$('#story').click(() => {
 		page = page + 1;
 		if (page < story.pages.length) {
 			$('#pageImage').attr('src', story.pages[page].src);
@@ -77,7 +77,7 @@ $(() => {
 		}
 	});
 
-	$('#feedback button').click(() => {
+	$('#feedback #feedback-option').click(() => {
 		getBooks().then(() => {
 			feedbackPage.css('display', 'none');
 			selectionPage.css('display', 'block');

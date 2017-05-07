@@ -2,12 +2,18 @@
 <html>
   <head>
     <title>Baby Books</title>
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script type="text/javascript" src='/javascripts/jquery-3.2.1.min.js'></script>
     <script type="text/javascript" src='/javascripts/reader.js'></script>
   </head>
   <body>
     <section id="selection">
+      <div class="row">
+        <div class='col-xs-12' style='text-align: center;'>
+          <h1>Which story would you like to read?</h1>
+        </div>
+      </div>
       <div class="container">
         <article>
           <div id="story0">
@@ -24,20 +30,28 @@
 
     <section id="story">
       <div class="image">
-        <img id="pageImage" />
+        <img id="pageImage" style='height: 200px;' />
       </div>
       <aside>
         <div id="pageText" class="text">
           Page text
         </div>
-        <button id="nextPage">Next Page</button>
       </aside>
     </section>
 
     <section id="feedback">
-      <div>
-        <button id="positiveFeedback">I liked it!</button>
-        <button id="negativeFeedback">I didn't like it.</button>
+      <div class="row">
+        <div class='col-xs-12' style='text-align: center; margin-bottom: 50px;'>
+          <h1>How did you like this story?</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class='col-xs-6' style='text-align: center;'>
+          <img id='feedback-option' src='/images/feedback-happy-face.jpg' style='width: 50%;' />
+        </div>
+        <div class='col-xs-6' style='text-align: center;'>
+          <img id='feedback-option' src='/images/feedback-sad-face.png' style='width: 50%;' />
+        </div>
       </div>
     </section>
   </body>
