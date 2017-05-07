@@ -1,8 +1,16 @@
-body {
-	background-image: url('/images/bg-bubbles.jpg');
-	background-size: 100%;
-}
-
 .row {
 	margin-bottom: 20px;
+}
+
+.selection {
+	text-align: center;
+}
+
+.selection-title {
+	text-align: right;
+}
+
+.age-selection {
+	border: 1px #ddd solid;
+	background-color: #fff; padding: 3px;
 }

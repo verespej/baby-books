@@ -9,55 +9,55 @@
   <body>
     <div class='row'>
 	    <div class='col-xs-12' style='text-align:center;'>
-	    	<h1>Let's learn about your child...</h1>
+	    	<h1>Teach us a little about your child...</h1>
 	    </div>
     </div>
     <div class='row'>
-	    <div class='col-xs-2' style='text-align: right;'>
+	    <div class='col-xs-2 selection-title'>
 	    	<h2>Age:</h2>
 	    </div>
 	    <% for (var i = 0; i < ages.length; i++) {%>
-		    <div class='col-xs-2' style='text-align: center;'>
-		    	<h2><%= ages[i] %> years</h2>
+		    <div class='col-xs-2 selection'>
+		    	<h2 class='img-rounded age-selection'><%= ages[i] %> years</h2>
 		    </div>
 		<% } %>
     </div>
     <div class='row'>
-	    <div class='col-xs-2' style='text-align: right;'>
+	    <div class='col-xs-2 selection-title'>
 	    	<h2>Gender:</h2>
 	    </div>
 	    <% for (var i = 0; i < genders.length; i++) {%>
-		    <div class='col-xs-2' style='text-align: center;'>
-		    	<img src='<%= genders[i].image %>' style='width: 100%;' />
+		    <div class='col-xs-2 selection'>
+		    	<img class='img-rounded' src='<%= genders[i].image %>' style='width: 100%;' />
 		    	<h2><%= genders[i].text %></h2>
 		    </div>
 		<% } %>
     </div>
     <div class='row'>
-	    <div class='col-xs-2' style='text-align: right;'>
+	    <div class='col-xs-2 selection-title'>
 	    	<h2>Location:</h2>
 	    </div>
 	    <% for (var i = 0; i < locations.length; i++) {%>
-		    <div class='col-xs-2' style='text-align: center;'>
-		    	<img src='<%= locations[i].image %>' style='width: 100%;' />
+		    <div class='col-xs-2 selection'>
+		    	<img class='img-rounded' src='<%= locations[i].image %>' style='width: 100%;' />
 		    	<h2><%= locations[i].text %></h2>
 		    </div>
 		<% } %>
     </div>
     <div class='row'>
-	    <div class='col-xs-2' style='text-align: right;'>
+	    <div class='col-xs-2 selection-title'>
 	    	<h2>Interests:</h2>
 	    </div>
 	    <% for (var i = 0; i < interests.length; i++) {%>
-		    <div class='col-xs-2' style='text-align: center;'>
-		    	<img src='<%= interests[i].image %>' style='width: 100%;' />
+		    <div class='col-xs-2 selection'>
+		    	<img class='img-rounded' src='<%= interests[i].image %>' style='width: 100%;' />
 		    	<h2><%= interests[i].text %></h2>
 		    </div>
 		<% } %>
     </div>
     <div class='row'>
-    	<div class='col-xs-12' style='text-align: center;'>
-			<button type="button" class="btn btn-default">Storytime!</button>
+    	<div class='col-xs-12' style='text-align: center; margin-top: 20px;'>
+			<button type="button" class="btn btn-default"><h2 style='margin: 0;'>Let's read!</h2></button>
     	</div>
     </div>
     <script type="text/javascript" src='/javascripts/jquery-3.2.1.min.js'></script>
