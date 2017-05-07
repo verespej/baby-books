@@ -70,6 +70,8 @@ section {
 }
 
 #story0, #story1 {
+    width: 224px;
+    height: 300px;
 	display: inline-block;
 	background-image: url('/images/book-cover.gif');
     background-repeat: no-repeat;
