@@ -10,7 +10,8 @@
 	text-align: right;
 }
 
-.age-selection {
+.button-link {
 	border: 1px #ddd solid;
 	background-color: #fff; padding: 3px;
+	text-decoration: none;
 }
