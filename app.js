@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
+var profile = require('./routes/profile');
 var bookSelection = require('./routes/book-selection');
 var storyPage = require('./routes/story-page');
 
@@ -21,9 +21,10 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use('/', express.static(path.join(__dirname, 'bootstrap/startbootstrap-creative-gh-pages')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
+app.use('/profile', profile);
 app.use('/book-selection', bookSelection);
 app.use('/story-page', storyPage);
 

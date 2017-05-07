@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', {
+  res.render('profile', {
     ages: ['< 2', '2', '3', '4', '5+'],
     genders: [
       {
