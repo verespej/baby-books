@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Baby Books</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src='/javascripts/jquery-3.2.1.min.js'></script>
+    <script type="text/javascript" src='/javascripts/reader.js'></script>
+  </head>
+  <body>
+    <section id="selection">
+      <div class="container">
+        <article>
+          <div id="story0">
+            <h1>Hello World</h1>
+          </div>
+        </article>
+        <article>
+          <div id="story1">
+            <h1>Goodnight Moon</h1>        
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="story">
+      <div class="image">
+        <img id="pageImage" />
+      </div>
+      <aside>
+        <div id="pageText" class="text">
+          Page text
+        </div>
+        <button id="nextPage">Next Page</button>
+      </aside>
+    </section>
+
+    <section id="feedback">
+      <div>
+        <button id="positiveFeedback">I liked it!</button>
+        <button id="negativeFeedback">I didn't like it.</button>
+      </div>
+    </section>
+  </body>
+</html>

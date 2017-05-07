@@ -117,15 +117,19 @@ function generate(book) {
 
 router.get('/generate', (req, res) => {
 	generate(mybook).then(generated=>{
-		//res.send(generated);
-  		res.render('books', generated);
+		res.send(generated);
+  		//res.render('books', generated);
 	});
+});
+
+router.get('/reader', (req, res) => {
+	res.render('reader');
 });
 
 
 const mypage = {
 	text: "$name likes $color. The $object is $color.",
-	imageQuery: "$color $object",
+	imageQuery: "cartoon $color $object",
 	variables: {
 		color: ["red", "orange", "yellow", "green", "blue", "purple", "brown", "black", "white"],
 		object: ["car", "train", "boat", "bowl", "ball", "dress", "shirt", "chair"]

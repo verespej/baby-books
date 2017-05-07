@@ -6,3 +6,61 @@ body {
 a {
   color: #00B7FF;
 }
+
+section {
+	border: 3px solid black;
+	margin: 10px;
+	display: none;
+}
+
+#selection .container {
+	display: flex;
+}
+
+#selection article {
+	flex: 1;
+	text-align: center;
+}
+
+#selection article div {
+	background: #eee;
+	width: 80%;
+	height: 300px;
+	display: inline-block;
+}
+
+#story {
+
+
+}
+
+#story .image {
+	height: 300px;
+}
+
+#story aside {
+	display: flex;
+}
+
+#story .text {
+	height: 100px;
+	flex: 1;
+}
+
+#story button {
+	flex: none;
+}
+
+
+#feedback {
+	height: 400px;
+}
+
+#feedback div {
+	display: flex;
+}
+
+#feedback button {
+	flex: 1;
+	height: 40px;
+}
