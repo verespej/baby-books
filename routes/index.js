@@ -4,7 +4,6 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', {
-    title: 'Baby Books',
     ages: ['< 2', '2', '3', '4', '5+'],
     genders: [
       {
@@ -52,6 +51,7 @@ router.get('/', function(req, res, next) {
         text: 'Superheroes',
       },
     ],
+    title: 'Baby Books: Create profile',
   });
 });
 
