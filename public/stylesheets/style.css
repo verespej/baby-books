@@ -27,10 +27,12 @@ section {
 }
 
 #selection article div {
-	background: #eee;
 	width: 80%;
 	height: 300px;
 	display: inline-block;
+	background-image: url('/images/book-cover.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #story {
@@ -65,4 +67,11 @@ section {
 
 #feedback #feedback-option {
 	flex: 1;
+}
+
+#story0, #story1 {
+	display: inline-block;
+	background-image: url('/images/book-cover.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
