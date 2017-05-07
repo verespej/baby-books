@@ -5,6 +5,12 @@
     <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
     <link href='/stylesheets/style.css' rel='stylesheet' />
     <link href='/stylesheets/index.css' rel='stylesheet' />
+    <script>
+    	function highlight(element) {
+    		$(element).css('border', '5px solid green');
+    	}
+    	onclick="myScript"
+    </script>
   </head>
   <body>
     <div class='row'>
@@ -18,7 +24,7 @@
 	    </div>
 	    <% for (var i = 0; i < ages.length; i++) {%>
 		    <div class='col-xs-2 selection'>
-		    	<h2 class='img-rounded button-link'><%= ages[i] %> years</h2>
+		    	<h2 class='img-rounded button-link' onclick='highlight(this)'><%= ages[i] %> years</h2>
 		    </div>
 		<% } %>
     </div>
@@ -28,7 +34,7 @@
 	    </div>
 	    <% for (var i = 0; i < genders.length; i++) {%>
 		    <div class='col-xs-2 selection'>
-		    	<img class='img-rounded' src='<%= genders[i].image %>' style='width: 100%;' />
+		    	<img class='img-rounded' onclick='highlight(this)' src='<%= genders[i].image %>' style='width: 100%;' />
 		    	<h2><%= genders[i].text %></h2>
 		    </div>
 		<% } %>
@@ -39,7 +45,7 @@
 	    </div>
 	    <% for (var i = 0; i < locations.length; i++) {%>
 		    <div class='col-xs-2 selection'>
-		    	<img class='img-rounded' src='<%= locations[i].image %>' style='width: 100%;' />
+		    	<img class='img-rounded' onclick='highlight(this)' src='<%= locations[i].image %>' style='width: 100%;' />
 		    	<h2><%= locations[i].text %></h2>
 		    </div>
 		<% } %>
@@ -50,7 +56,7 @@
 	    </div>
 	    <% for (var i = 0; i < interests.length; i++) {%>
 		    <div class='col-xs-2 selection'>
-		    	<img class='img-rounded' src='<%= interests[i].image %>' style='width: 100%;' />
+		    	<img class='img-rounded' onclick='highlight(this)' src='<%= interests[i].image %>' style='width: 100%;' />
 		    	<h2><%= interests[i].text %></h2>
 		    </div>
 		<% } %>
