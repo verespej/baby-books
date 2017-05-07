@@ -2,10 +2,65 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href='/stylesheets/style.css' rel='stylesheet' />
+    <link href='/stylesheets/index.css' rel='stylesheet' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class='row'>
+	    <div class='col-xs-12' style='text-align:center;'>
+	    	<h1>Let's learn about your child...</h1>
+	    </div>
+    </div>
+    <div class='row'>
+	    <div class='col-xs-2' style='text-align: right;'>
+	    	<h2>Age:</h2>
+	    </div>
+	    <% for (var i = 0; i < ages.length; i++) {%>
+		    <div class='col-xs-2' style='text-align: center;'>
+		    	<h2><%= ages[i] %> years</h2>
+		    </div>
+		<% } %>
+    </div>
+    <div class='row'>
+	    <div class='col-xs-2' style='text-align: right;'>
+	    	<h2>Gender:</h2>
+	    </div>
+	    <% for (var i = 0; i < genders.length; i++) {%>
+		    <div class='col-xs-2' style='text-align: center;'>
+		    	<img src='<%= genders[i].image %>' style='width: 100%;' />
+		    	<h2><%= genders[i].text %></h2>
+		    </div>
+		<% } %>
+    </div>
+    <div class='row'>
+	    <div class='col-xs-2' style='text-align: right;'>
+	    	<h2>Location:</h2>
+	    </div>
+	    <% for (var i = 0; i < locations.length; i++) {%>
+		    <div class='col-xs-2' style='text-align: center;'>
+		    	<img src='<%= locations[i].image %>' style='width: 100%;' />
+		    	<h2><%= locations[i].text %></h2>
+		    </div>
+		<% } %>
+    </div>
+    <div class='row'>
+	    <div class='col-xs-2' style='text-align: right;'>
+	    	<h2>Interests:</h2>
+	    </div>
+	    <% for (var i = 0; i < interests.length; i++) {%>
+		    <div class='col-xs-2' style='text-align: center;'>
+		    	<img src='<%= interests[i].image %>' style='width: 100%;' />
+		    	<h2><%= interests[i].text %></h2>
+		    </div>
+		<% } %>
+    </div>
+    <div class='row'>
+    	<div class='col-xs-12' style='text-align: center;'>
+			<button type="button" class="btn btn-default">Storytime!</button>
+    	</div>
+    </div>
+    <script type="text/javascript" src='/javascripts/jquery-3.2.1.min.js'></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
   </body>
 </html>
